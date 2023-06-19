@@ -13,6 +13,16 @@ import { OrbitControls } from '@react-three/drei'
 
 function App() {
 
+  const apiKey = 'strityrig'
+
+  fetch('https://api.europeana.eu/record/v2/search.json?query=Berlin&reusability=open&media=true&wskey='+apiKey)
+  .then(res => {return res.json()})
+  .then(data => console.log(data))
+  .catch(err => console.log(err))
+
+  //edmIsShownBy
+
+
   return (
     <div className="App">
       <header className="App-header">
