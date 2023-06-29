@@ -14,7 +14,7 @@ function Home() {
             <h1>hello!</h1>
 
             <div className="toc">
-                here are the different links:
+                here are all the different links:
                 <ul>
                     <li>
                         <Link className='toc-item' to="/3d">3d</Link>
